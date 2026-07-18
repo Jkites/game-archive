@@ -1,5 +1,5 @@
 import BannerImage from "../_components/BannerImage";
-import wuwa from "./img/wuwa.jpg";
+import wuwa from "./img/banner.jpg";
 
 export default function Home() {
   return (
@@ -7,8 +7,6 @@ export default function Home() {
     <BannerImage
       src="/wuwa/banner.jpg"
       alt="Wuwa"
-      width={800}
-      height={400}
       ></BannerImage>
         <div className="text-center mt-4">
           <h1 className="text-3xl font-bold">Wuwa</h1>
