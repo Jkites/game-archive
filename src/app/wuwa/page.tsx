@@ -5,8 +5,10 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
     <BannerImage
-      src={wuwa}
+      src="/wuwa/banner.jpg"
       alt="Wuwa"
+      width={800}
+      height={400}
       ></BannerImage>
         <div className="text-center mt-4">
           <h1 className="text-3xl font-bold">Wuwa</h1>
