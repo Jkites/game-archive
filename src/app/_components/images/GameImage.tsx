@@ -15,11 +15,11 @@ export default function GameImage({
   variant,
   className = "",
 }: GameImageProps) {
-  const aspectClass = IMAGE_VARIANTS[variant];
+  const { aspect, sizes } = IMAGE_VARIANTS[variant];
 
   return (
-    <div className={`relative ${aspectClass} ${className}`}>
-      <Image src={src} alt={alt} fill className="object-cover" />
+    <div className={`relative ${aspect} ${className}`}>
+      <Image src={src} alt={alt} sizes={sizes} fill className="object-cover" />
     </div>
   );
 }
